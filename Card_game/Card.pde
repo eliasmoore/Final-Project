@@ -3,6 +3,7 @@ public abstract class Card
   int health;
   int damage;
   boolean guard;
+  int length;
   
   int getHealth()
   {
