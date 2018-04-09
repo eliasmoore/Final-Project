@@ -3,8 +3,8 @@ public abstract class Card
   int health;
   int damage;
   boolean guard;
-  final int LENGTH = 200;
-  final int WIDTH = 200;
+  static final int LENGTH = 200;
+  static final int WIDTH = 200;
   int xCoord;
   int yCoord;
   
@@ -19,7 +19,7 @@ public abstract class Card
     health = newHealth;
   }
   
-  int getDamage(int newDamage)
+  int getDamage()
   {
     return damage;
   }
