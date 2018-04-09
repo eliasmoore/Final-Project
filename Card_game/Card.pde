@@ -28,5 +28,11 @@ public abstract class Card
   {
     damage = newDamage;
   }
-  
+    public void showCard(){
+    fill(255,255,255);
+    rect(612,400,100,140);
+        fill(50,50,50);
+    text(health,680,425);
+    text(damage,620,425);
+    }
 }
