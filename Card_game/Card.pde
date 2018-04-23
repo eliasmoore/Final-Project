@@ -78,7 +78,6 @@ public void clickDrag(){
     text(health,(xCoord+12),(yCoord+30));
     text(damage,(xCoord+62),(yCoord+30));
     }
-<<<<<<< HEAD
     void fightCard(Card enemy){
       int friendlyDamage;
       int random = (int)Math.random()*kritChance;
@@ -92,7 +91,3 @@ public void clickDrag(){
       enemy.setHealth(enemy.getHealth()-friendlyDamage);    
     }
 }
-=======
-  
-}
->>>>>>> 73206aaffb90105d5cf5729098f8cb3aee1665ec
