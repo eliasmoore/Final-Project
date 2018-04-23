@@ -35,6 +35,5 @@ public abstract class Card
     text(health,680,425);
     text(damage,620,425);
     }
-}
   
 }

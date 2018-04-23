@@ -1,4 +1,4 @@
 public class Game
 {
-  final static int deckLimit = 52;
+  final static int DECK_LIMIT = 52;
 }
