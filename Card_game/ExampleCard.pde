@@ -5,5 +5,6 @@ public class ExampleCard extends Card
     health = 10;
     damage = 10;
     guard = false;
+    kritDamage = 15;
   }
 }

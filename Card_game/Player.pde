@@ -13,7 +13,7 @@ public class Player
     for(int i = 1; i < 100; i++)
     {
       deck.remove(Math.random()*Game.deckLimit);
-      deck.add()
+      //deck.add()
     }
   }
   
