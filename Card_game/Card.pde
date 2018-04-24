@@ -7,6 +7,7 @@ public abstract class Card
   int damage;
   int kritDamage;
   boolean guard;
+  String name;
   static final int LENGTH = 200;
   static final int WIDTH = 200;
   int kritChance = 10;

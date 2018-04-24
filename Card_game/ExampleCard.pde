@@ -6,5 +6,6 @@ public class ExampleCard extends Card
     damage = 10;
     guard = false;
     kritDamage = 15;
+    name = "Example Card";
   }
 }
