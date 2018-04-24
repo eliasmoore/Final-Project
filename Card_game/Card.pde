@@ -17,7 +17,7 @@ public abstract class Card
 public void clickDrag(){
   if(xCoord <= mouseX && mouseX >= (xCoord+140) && yCoord <= mouseY && mouseY >= (xCoord+100)){
         if(mousePressed==true){
-            if(firstClick == true){
+           /* if(firstClick == true){
                currentMouseY = mouseY;
                currentMouseX = mouseX;
                firstClick = false;
@@ -26,22 +26,24 @@ public void clickDrag(){
          }
          if(mouseX > currentMouseX){
            xCoord = xCoord+10;
+           currentMouseX = mouseX;
          }
          if(mouseY > currentMouseY){
-           yCoord = yCoord+10;
+           yCoord = yCoord+10; 
+           currentMouseY = mouseY;
          }
          if(mouseX < currentMouseX){
            xCoord = xCoord-10;
+           currentMouseX = mouseX;           
          }
          if(mouseY < currentMouseY){
            yCoord = yCoord-10;
-         }
-    }
-    
-  
-}    
-
-
+           currentMouseY = mouseY;
+         }   
+*/
+  }
+}
+}
  
   int getHealth()
   {
