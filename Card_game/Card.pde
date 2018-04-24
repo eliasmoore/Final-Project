@@ -10,39 +10,60 @@ public abstract class Card
   static final int LENGTH = 200;
   static final int WIDTH = 200;
   int kritChance = 10;
-  int currentMouseX;
-  int currentMouseY;
+  int originalMouseX = xCoord;
+  int originalMouseY = yCoord;
   Boolean firstClick = true;
   
-public void clickDrag(){
-  if(xCoord <= mouseX && mouseX >= (xCoord+140) && yCoord <= mouseY && mouseY >= (xCoord+100)){
-        if(mousePressed==true){
-           /* if(firstClick == true){
-               currentMouseY = mouseY;
-               currentMouseX = mouseX;
-               firstClick = false;
-               System.out.println(currentMouseX);
-              }       
-         }
-         if(mouseX > currentMouseX){
-           xCoord = xCoord+10;
-           currentMouseX = mouseX;
-         }
-         if(mouseY > currentMouseY){
-           yCoord = yCoord+10; 
-           currentMouseY = mouseY;
-         }
-         if(mouseX < currentMouseX){
-           xCoord = xCoord-10;
-           currentMouseX = mouseX;           
-         }
-         if(mouseY < currentMouseY){
-           yCoord = yCoord-10;
-           currentMouseY = mouseY;
-         }   
-*/
-  }
+public void mouseClick(){
+  originalMouseX = mouseX;
+  originalMouseY = mouseY;
+  System.out.println(xCoord);
+  System.out.println(yCoord);
+  System.out.println(originalMouseX);
+  System.out.println(originalMouseY);
 }
+public void clickDrag(){
+  System.out.println(xCoord);
+            System.out.println(yCoord);
+            System.out.println(originalMouseX);
+            System.out.println(originalMouseY);
+  if((originalMouseX >= xCoord) && (originalMouseX <= (xCoord+140)) && (originalMouseY >= yCoord) && (originalMouseY <= (yCoord+100))){
+        if(mousePressed==true){
+            xCoord = mouseX;
+            yCoord = mouseY;
+            originalMouseX = mouseX + 50;
+            originalMouseY = mouseY + 70;
+            System.out.println(xCoord);
+            System.out.println(yCoord);
+            System.out.println(originalMouseX);
+            System.out.println(originalMouseY);
+            /*   if(firstClick == true){
+                 originalMouseY = mouseY;
+                 originalMouseX = mouseX;
+                 firstClick = false;
+                 System.out.println(originalMouseX);
+              } 
+              */
+         }
+         /*if(mouseX > originalMouseX){
+           xCoord = xCoord+10;
+           //originalMouseX = mouseX;
+         }
+         if(mouseY > originalMouseY){
+           yCoord = yCoord+10; 
+           //originalMouseY = mouseY;
+         }
+         if(mouseX < originalMouseX){
+           xCoord = xCoord-10;
+           //originalMouseX = mouseX;           
+         }
+         if(mouseY < originalMouseY){
+           yCoord = yCoord-10;
+           //originalMouseY = mouseY;
+         }   */
+
+  }
+
 }
  
   int getHealth()
