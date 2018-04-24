@@ -1,8 +1,8 @@
 import java.util.Random;
-  int xCoord=100;
-  int yCoord=100;
 public abstract class Card
 {
+  int xCoord;
+  int yCoord;
   int health;
   int damage;
   int kritDamage;
@@ -23,20 +23,13 @@ public void mouseClick(){
   System.out.println(originalMouseY);
 }
 public void clickDrag(){
-  System.out.println(xCoord);
-            System.out.println(yCoord);
-            System.out.println(originalMouseX);
-            System.out.println(originalMouseY);
-  if((originalMouseX >= xCoord) && (originalMouseX <= (xCoord+140)) && (originalMouseY >= yCoord) && (originalMouseY <= (yCoord+100))){
+
+  if((originalMouseX >= xCoord) && (originalMouseX <= (xCoord+100)) && (originalMouseY >= yCoord) && (originalMouseY <= (yCoord+140))){
         if(mousePressed==true){
-            xCoord = mouseX;
-            yCoord = mouseY;
+            xCoord = mouseX-50;
+            yCoord = mouseY-70;
             originalMouseX = mouseX + 50;
             originalMouseY = mouseY + 70;
-            System.out.println(xCoord);
-            System.out.println(yCoord);
-            System.out.println(originalMouseX);
-            System.out.println(originalMouseY);
             /*   if(firstClick == true){
                  originalMouseY = mouseY;
                  originalMouseX = mouseX;

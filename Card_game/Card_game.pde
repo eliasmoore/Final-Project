@@ -1,4 +1,4 @@
-Card test= new ExampleCard();
+Card test= new ExampleCard(100,100);
 void setup()
 {
   size(1024,576);
@@ -18,8 +18,5 @@ void  mousePressed(){
   
   test.mouseClick();
 }
-  void mouseDragged(){
-   //test.clickDrag(); 
-  }
   static void startGame(Player player1, Player player2){
 }
