@@ -1,18 +1,25 @@
 import java.util.Random;
 public abstract class Card
 {
+  
   int xCoord;
   int yCoord;
+  
   int health;
   int damage;
   int kritDamage;
+  
   boolean guard;
   String name;
+  
   static final int LENGTH = 200;
   static final int WIDTH = 200;
+  
   int kritChance = 10;
+  
   int originalMouseX = xCoord;
   int originalMouseY = yCoord;
+  
   Boolean firstClick = true;
   
 public void mouseClick(){
@@ -59,18 +66,18 @@ public void clickDrag(){
   }
 
 }
- 
-  int getHealth()
+
+ int getHealth()//Eli
   {
     return health;
   }
   
-  void setHealth(int newHealth)
+  void setHealth(int newHealth)//Eli
   {
     health = newHealth;
   }
   
-  int getDamage()
+  int getDamage()//Eli
   {
     return damage; }
   
@@ -78,6 +85,7 @@ public void clickDrag(){
   {
     damage = newDamage;
   }
+  
   int getKrit()
   {
     return kritDamage;
@@ -95,7 +103,8 @@ public void clickDrag(){
     text(health,(xCoord+12),(yCoord+30));
     text(damage,(xCoord+62),(yCoord+30));
     }
-    void fightCard(Card enemy){
+    
+    void fightCard(Card enemy){//Eli
       int friendlyDamage;
       int random = (int)Math.random()*kritChance;
       if(random == 1){

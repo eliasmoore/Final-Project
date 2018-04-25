@@ -1,5 +1,6 @@
 import java.util.ArrayList;
-public class Player
+public class Player//Eli
+//TODO Move the hand stuff to inPlay
 {
   ArrayList<Card> deck;
   ArrayList<Card> hand;

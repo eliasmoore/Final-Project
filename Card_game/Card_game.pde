@@ -27,5 +27,7 @@ void  mousePressed(){
   hand.get(i).mouseClick();
   }
 }
-  static void startGame(Player player1, Player player2){
+static void startGame(Player player1, Player player2)
+{
+    
 }
