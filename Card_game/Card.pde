@@ -67,17 +67,17 @@ public void clickDrag(){
 
 }
 
- int getHealth()//Eli
+ int getHealth()
   {
     return health;
   }
   
-  void setHealth(int newHealth)//Eli
+  void setHealth(int newHealth)
   {
     health = newHealth;
   }
   
-  int getDamage()//Eli
+  int getDamage()
   {
     return damage; }
   
@@ -102,9 +102,10 @@ public void clickDrag(){
     fill(50,50,50);
     text(health,(xCoord+12),(yCoord+30));
     text(damage,(xCoord+62),(yCoord+30));
+    text(name,(xCoord +12),(yCoord+50));
     }
     
-    void fightCard(Card enemy){//Eli
+    void fightCard(Card enemy){
       int friendlyDamage;
       int random = (int)Math.random()*kritChance;
       if(random == 1){
