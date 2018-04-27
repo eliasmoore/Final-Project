@@ -14,14 +14,18 @@ void setup()
   
 }
 void draw(){
+  run();
+}
+  public void run(){
   background(230,230,230);
   rect(0,0,1024,50);
   rect(0,501,1024,75);
   for(int i=0;i<hand.size();i++){
     hand.get(i).showCard();
     hand.get(i).clickDrag();
+   }
   }
-}
+
 void  mousePressed(){
   for(int i=0;i<hand.size();i++){
   hand.get(i).mouseClick();
