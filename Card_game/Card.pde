@@ -22,11 +22,11 @@ public abstract class Card
   
   Boolean firstClick = true;
   
-public void mouseClick(){
+public void mouseClick(){//G
   originalMouseX = mouseX;
   originalMouseY = mouseY;
 }
-public void clickDrag(){
+public void clickDrag(){//G
 
   if((originalMouseX >= xCoord) && (originalMouseX <= (xCoord+100)) && (originalMouseY >= yCoord) && (originalMouseY <= (yCoord+140))){
         System.out.println(xCoord);
@@ -108,7 +108,7 @@ public void clickDrag(){
      kritDamage = newKrit;
   }
   
-    public void showCard(){
+    public void showCard(){//G
     fill(255,255,255);
     rect(xCoord,yCoord,100,140);
     fill(50,50,50);
