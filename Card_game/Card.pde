@@ -90,7 +90,7 @@ public void clickDrag(){
     {
       damageToShow = damageToShow+1;
     }
-    return damageToShow; 
+    return damageToShow;
   }
   
   void setDamage(int newDamage)

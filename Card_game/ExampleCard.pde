@@ -1,4 +1,4 @@
-public class ExampleCard extends Card
+public class ExampleCard extends Card//Eli
 {
   public ExampleCard(int x, int y)
   {
