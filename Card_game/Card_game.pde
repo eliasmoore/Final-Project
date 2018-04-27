@@ -11,6 +11,7 @@ void setup()
   background(230,230,230);
   rect(0,0,1024,50);
   rect(0,501,1024,75);
+  createHand();
   
 }
 
