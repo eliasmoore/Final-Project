@@ -69,6 +69,11 @@ public void clickDrag(){
 
  int getHealth()
   {
+    boolean dead = health<=0;
+    if(dead)
+    {
+      health = 0;
+    }
     return health;
   }
   
@@ -79,7 +84,14 @@ public void clickDrag(){
   
   int getDamage()
   {
-    return damage; }
+    int damageToShow = 0;
+    
+    for(int i = 0; i < damage; i++)
+    {
+      damageToShow = damageToShow+1;
+    }
+    return damageToShow; 
+  }
   
   void setDamage(int newDamage)
   {
@@ -100,8 +112,8 @@ public void clickDrag(){
     fill(255,255,255);
     rect(xCoord,yCoord,100,140);
     fill(50,50,50);
-    text(health,(xCoord+12),(yCoord+30));
-    text(damage,(xCoord+62),(yCoord+30));
+    text(this.getHealth(),(xCoord+12),(yCoord+30));
+    text(this.getDamage(),(xCoord+62),(yCoord+30));
     text(name,(xCoord +12),(yCoord+50));
     }
     
