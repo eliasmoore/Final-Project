@@ -25,15 +25,15 @@ public abstract class Card
 public void mouseClick(){
   originalMouseX = mouseX;
   originalMouseY = mouseY;
-  System.out.println(xCoord);
-  System.out.println(yCoord);
-  System.out.println(originalMouseX);
-  System.out.println(originalMouseY);
 }
 public void clickDrag(){
 
   if((originalMouseX >= xCoord) && (originalMouseX <= (xCoord+100)) && (originalMouseY >= yCoord) && (originalMouseY <= (yCoord+140))){
-        if(mousePressed==true){
+        System.out.println(xCoord);
+  System.out.println(yCoord);
+  System.out.println(originalMouseX);
+  System.out.println(originalMouseY);  
+    if(mousePressed==true){
             xCoord = mouseX-50;
             yCoord = mouseY-70;
             originalMouseX = mouseX + 50;
